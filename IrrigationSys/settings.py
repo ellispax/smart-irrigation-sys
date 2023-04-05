@@ -49,8 +49,7 @@ INSTALLED_APPS = [
     'crops',
     'manager',
     'transactions',
-    'analytics',
-    'bootstrap5'
+    'analytics'
 ]
 
 MIDDLEWARE = [
