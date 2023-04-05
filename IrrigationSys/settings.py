@@ -40,6 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'login',
     'rest_framework',
+    'chartjs',
+    'crispy_forms',
+    'home',
+    'settings',
+    'crops',
+    'manager',
+    'transactions',
+    'analytics'
 ]
 
 MIDDLEWARE = [

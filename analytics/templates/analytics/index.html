@@ -1,0 +1,26 @@
+{% extends "home/base.html" %} {% load crispy_forms_tags %} {% block content %}
+
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title">{{ head }}</h4>
+  </div>
+</div>
+
+<canvas id="myChart" width="200" height="100"></canvas>
+
+<script
+  type="text/javascript"
+  src="http://code.jquery.com/jquery-1.10.0.min.js"
+></script>
+
+<script type="text/javascript">
+  $.get('{% url "line_chart_json" %}', function (data) {
+    var ctx = $("#myChart").get(0).getContext("2d");
+    new Chart(ctx, {
+      type: "line",
+      data: data,
+    });
+  });
+</script>
+
+{% endblock content %}
