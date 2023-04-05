@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-pj*l9c()-%4es3d#qx4uwjsu%z9=kj2tytqm5es3_ipr0zk32i
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+CSRF_TRUSTED_ORIGINS = ['https://smart-irrigation-sys-production.up.railway.app']
 
 # Application definition
 
