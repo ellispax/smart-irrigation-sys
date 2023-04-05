@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'chartjs',
     'crispy_forms',
+    'crispy_bootstrap5',
     'home',
     'settings',
     'crops',
